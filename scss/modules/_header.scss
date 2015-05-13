@@ -1,0 +1,39 @@
+.main-header{
+	height: 51px;
+	background-color: #fff;
+	padding: 10px 0;
+	.logo{
+//		display: inline-block;
+  		//margin: 12px 0;
+	}
+	.search-box{
+//		display: inline-block;
+		.input-group{
+			width: 530px;
+			.search-field, button{
+				border: none;
+				background-color: #eeeeee;
+			}
+			.search-field{
+				width: calc( 100% - 30px );
+				height: 31px;
+				padding: 0px 7px;
+			}
+			button{
+				width: 30px;
+				height: 31px;	
+			}
+		}
+	}
+	.notifications{
+		text-align: right;
+		.icon{
+			display: inline-block;
+			.fa{
+				height: 31px;
+				width: 31px;
+				font-size: 22px
+			}
+		}
+	}
+}
