@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,8 +54,8 @@
                                 <div class="social-login">
                                     <div class="header"><span>Login using</span></div>
                                     <div class="icons row">
-                                        <div class="icon col-xs-4 col-md-4 text-center"><a href=""><span class='fa fa-facebook-square fa-3x'></span></a></div>
-                                        <div class="icon col-xs-4 col-md-4 text-center"><a href=""><span class='fa fa-twitter-square fa-3x'></span></a></div>
+                                        <div class="icon col-xs-4 col-md-4 text-center"><a href="<?php echo URL_PROTOCOL.'login/facebook'?>"><span class='fa fa-facebook-square fa-3x'></span></a></div>
+                                        <div class="icon col-xs-4 col-md-4 text-center"><a href="<?php echo URL_PROTOCOL.'login/twitter' ?>"><span class='fa fa-twitter-square fa-3x'></span></a></div>
                                         <div class="icon col-xs-4 col-md-4 text-center"><a href=""><span class='fa fa-google-plus-square fa-3x'></span></a></div>
                                     </div>
                                 </div>

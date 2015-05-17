@@ -35,38 +35,38 @@ ini_set("display_errors", 1);
  * The final, auto-detected URL (build via the segments above). If you don't want to use auto-detection,
  * then replace this line with full URL (and sub-folder) and a trailing slash.
  */
+if( echo $_SERVER['SERVER_NAME'] == 'localhost' ){
 
-define('URL_PUBLIC_FOLDER', 'public');
-define('URL_PROTOCOL', 'https://begoo.dotcloudapp.com/');
-define('URL_DOMAIN', $_SERVER['HTTP_HOST']);
-define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SCRIPT_NAME'])));
-define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
+    define('URL_PUBLIC_FOLDER', 'public');
+    define('URL_PROTOCOL', 'http://localhost/begoo/');
+    define('URL_DOMAIN', $_SERVER['HTTP_HOST']);
+    define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SCRIPT_NAME'])));
+    define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
+    /**
+     * Configuration for: Database
+     * This is the place where you define your database credentials, database type etc.
+     */
+    define('DB_TYPE', 'mysql');
+    define('DB_HOST', '127.0.0.1');
+    define('DB_NAME', 'begoo');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    define('DB_CHARSET', 'utf8');
+}else{
+    define('URL_PUBLIC_FOLDER', 'public');
+    define('URL_PROTOCOL', 'https://begoo.dotcloudapp.com/');
+    define('URL_DOMAIN', $_SERVER['HTTP_HOST']);
+    define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SCRIPT_NAME'])));
+    define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
 
-/**
- * Configuration for: Database
- * This is the place where you define your database credentials, database type etc.
- */
-define('DB_TYPE', 'mysql');
-define('DB_HOST', '173.194.241.167');
-define('DB_NAME', 'depctxyde69');
-define('DB_USER', 'depctxyde69');
-define('DB_PASS', 'eGFIKiuawz6j');
-define('DB_CHARSET', 'utf8');
-
-
-//
-//define('URL_PUBLIC_FOLDER', 'public');
-//define('URL_PROTOCOL', 'http://127.0.0.1/begoo/');
-//define('URL_DOMAIN', $_SERVER['HTTP_HOST']);
-//define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SCRIPT_NAME'])));
-//define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
-/**
- * Configuration for: Database
- * This is the place where you define your database credentials, database type etc.
- */
-//define('DB_TYPE', 'mysql');
-//define('DB_HOST', '127.0.0.1');
-//define('DB_NAME', 'begoo');
-//define('DB_USER', 'root');
-//define('DB_PASS', '');
-//define('DB_CHARSET', 'utf8');
+    /**
+     * Configuration for: Database
+     * This is the place where you define your database credentials, database type etc.
+     */
+    define('DB_TYPE', 'mysql');
+    define('DB_HOST', '173.194.241.167');
+    define('DB_NAME', 'depctxyde69');
+    define('DB_USER', 'depctxyde69');
+    define('DB_PASS', 'eGFIKiuawz6j');
+    define('DB_CHARSET', 'utf8');
+}
