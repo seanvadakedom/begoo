@@ -35,7 +35,7 @@ ini_set("display_errors", 1);
  * The final, auto-detected URL (build via the segments above). If you don't want to use auto-detection,
  * then replace this line with full URL (and sub-folder) and a trailing slash.
  */
-if( echo $_SERVER['SERVER_NAME'] == 'localhost' ){
+if( $_SERVER['SERVER_NAME'] == 'localhost' ){
 
     define('URL_PUBLIC_FOLDER', 'public');
     define('URL_PROTOCOL', 'http://localhost/begoo/');
